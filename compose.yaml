@@ -44,7 +44,7 @@ services:
         networks:
             - laravel
     vite:
-        image: node:24-alpine
+        image: node:22-alpine
         working_dir: /var/www/html
         command: "npm run dev -- --host 0.0.0.0"
         ports:

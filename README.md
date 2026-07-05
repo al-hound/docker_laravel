@@ -28,7 +28,7 @@ If you don't need to use the installer, and only need a basic project with no mo
 docker compose run --rm app composer create-project laravel/laravel .
 ```
 
-## Use an existing Laravel project
+### Use an existing Laravel project
 
 Copy the entire project to the `src` directory and then modify the `.env` file according to your needs and then run:
 
