@@ -2,9 +2,9 @@
 
 This enviroment expects the Laravel project to be in `src`
 
-## Create a new laravel project 
+## Setup the Laravel project 
 
-In order to create a new Laravel project we have 2 options:
+In order to create a new Laravel project we have 3 options:
 
 ### Laravel installer
 
