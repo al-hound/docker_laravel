@@ -4,9 +4,9 @@ This enviroment expects the Laravel project to be in `src`
 
 ## Setup the Laravel project 
 
-In order to create a new Laravel project we have 3 options:
+In order to setup a Laravel project we have 3 options:
 
-### Laravel installer
+### Use Laravel installer
 
 In order to use the Laravel installer use this command `docker compose run --rm app laravel new project`, however the project will be created inside `src` giving you a nested folder, that must be changed. So in order to fix it take the project out of the `src` folder and placed on root and then replace the `src` folder with the `project` directory, as seen below. This happens because of how the installer works, and I coudln't find a better solution, if a better way is found, then this part will be updated.
 
@@ -19,7 +19,7 @@ rm -R src
 mv project src
 ```
 
-### Empty Laravel project
+### Create a basic Laravel project
 
 If you don't need to use the installer, and only need a basic project with no modules instaled, then you can use the basic command, it will create a basic project with no modules, but you don'need to do anything else, as the installation will be done directly into the src folder. 
 
@@ -28,7 +28,7 @@ If you don't need to use the installer, and only need a basic project with no mo
 docker compose run --rm app composer create-project laravel/laravel .
 ```
 
-## Use a project with an existent Laravel project
+## Use an existing Laravel project
 
 Copy the entire project to the `src` directory and then modify the `.env` file according to your needs and then run:
 
